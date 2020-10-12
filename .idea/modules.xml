@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/springmvcparent/spingmvcbytomcat/spingmvcbytomcat.iml" filepath="$PROJECT_DIR$/springmvcparent/spingmvcbytomcat/spingmvcbytomcat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmvcparent/springmvcparent.iml" filepath="$PROJECT_DIR$/springmvcparent/springmvcparent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmvcparent/webbyjetty/webbyjetty.iml" filepath="$PROJECT_DIR$/springmvcparent/webbyjetty/webbyjetty.iml" />
+    </modules>
+  </component>
+</project>

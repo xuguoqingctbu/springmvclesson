@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>springmvcparent</artifactId>
+        <groupId>com.oracle</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.oracle</groupId>
+    <artifactId>webbyjetty</artifactId>
+    <packaging>war</packaging>
+
+    <name>webbyjetty Maven Webapp</name>
+    <!-- FIXME change it to the project's website -->
+    <url>http://www.example.com</url>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <!-- 此处的 1.8 指的是 JDK 的版本，目前一般为 1.7 或 1.8 -->
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+            <!--servlet容器 jetty插件-->
+            <plugin>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>9.4.18.v20190429</version>
+                <configuration>
+                    <webApp>
+                        <!--项目的上下文配置-->
+                        <contextPath>/springmvctest</contextPath>
+                    </webApp>
+                    <!--项目的端口号和服务器配置-->
+                    <httpConnector>
+                        <port>8888</port>
+                        <host>localhost</host>
+                    </httpConnector>
+                    <scanIntervalSeconds>1</scanIntervalSeconds>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="spingmvcbytomcat:war">
+    <output-path>$PROJECT_DIR$/springmvcparent/spingmvcbytomcat/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>spingmvcbytomcat</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="spingmvcbytomcat-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="spingmvcbytomcat:war exploded" />
+    </root>
+  </artifact>
+</component>
